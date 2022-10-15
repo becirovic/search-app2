@@ -43,7 +43,7 @@ import { detailedInfo } from "../services/detailedInfo"
 export default{
     props:['theData'],
     methods:{
-        async infoDetailed(id) {
+        async infoDetailed(id:number) {
       const newid = Math.round(id) + 1;
       detailedInfo(newid);
     },
