@@ -15,7 +15,8 @@
     </form>
   </div>
 
-  <div class="container">
+  <div class="table-responsive">
+
     <TableComponent v-if="data.results" :theData="data" />
 
     <!-- <b-table :items="items"></b-table> -->
@@ -63,6 +64,7 @@ export default defineComponent({
 </script>
 
 <style scoped>
+
 .logo {
   height: 6em;
   padding: 1.5em;

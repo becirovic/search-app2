@@ -16,7 +16,7 @@
           <th scope="row" class="mask" @click="infoDetailed(stelle.legacy_id)">
             <a class="nav-link" href="#">{{ stelle.display_label }}</a>
           </th>
-          <td>
+          <td class="keywords">
             <span
               v-for="stichwort in stelle.key_word"
               :key="stichwort.legacy_pk"
@@ -51,4 +51,6 @@ export default{
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+.keywords{
+}</style>
